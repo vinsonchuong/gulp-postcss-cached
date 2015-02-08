@@ -1,11 +1,11 @@
 {
   "name": "gulp-postcss-cached",
   "version": "0.0.1",
-  "description": "",
-  "keywords": [],
+  "description": "postcss-cached as a Gulp plugin",
+  "keywords": ["gulp", "postcss", "postcss-cached"],
   "homepage": "https://github.com/vinsonchuong/gulp-postcss-cached",
   "bugs": "https://github.com/vinsonchuong/gulp-postcss-cached/issues",
-  "license": "",
+  "license": "MIT",
   "author": "Vinson Chuong <vinsonchuong@gmail.com>",
   "files": ["index.js", "README.md", "LICENSE"],
   "main": "index.js",
@@ -13,10 +13,14 @@
     "type": "git",
     "url": "https://github.com/vinsonchuong/gulp-postcss-cached"
   },
-  "devDependencies": {
-    "jasmine": "^2.2.0"
-  },
   "dependencies": {
+    "postcss-cached": "^0.0.3",
+    "gulp-util": "^3.0.3",
+    "through2": "^0.6.3",
+    "vinyl-sourcemaps-apply": "^0.1.4"
+  },
+  "peerDependencies": {
+    "gulp": "^3.8.0"
   },
   "scripts": {
     "test": "jasmine"
