@@ -15,7 +15,7 @@ module.exports = function(options) {
 
     try {
       var result = postcssCachedInstance
-        .processCss(file.contents.toString('utf8'), fileOptions);
+        .process(file.contents.toString('utf8'), fileOptions);
       file.contents = new Buffer(result.css);
       if (fileOptions.map) {
         applySourceMap(file, result.map);
