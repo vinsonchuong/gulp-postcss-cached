@@ -27,7 +27,10 @@ module.exports = function(options) {
     }
   });
 
-  gulpPlugin.use = postcssCachedInstance.use.bind(postcssCachedInstance);
+  gulpPlugin.use = function(postcssPlugin) {
+    postcssCachedInstance.use(postcssPlugin);
+    return this;
+  };
 
   return gulpPlugin;
 };
