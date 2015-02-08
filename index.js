@@ -1,7 +1,7 @@
 'use strict';
 var postcssCached = require('postcss-cached');
 var through = require('through2');
-var applySourceMap = require('vinyl-sourcemans-apply');
+var applySourceMap = require('vinyl-sourcemaps-apply');
 var gulpUtil = require('gulp-util');
 
 module.exports = function(options) {
