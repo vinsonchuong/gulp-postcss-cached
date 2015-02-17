@@ -14,7 +14,7 @@
     "url": "https://github.com/vinsonchuong/gulp-postcss-cached"
   },
   "dependencies": {
-    "postcss-cached": "^0.0.3",
+    "postcss-cached": "^0.0.4",
     "gulp-util": "^3.0.3",
     "through2": "^0.6.3",
     "vinyl-sourcemaps-apply": "^0.1.4"
