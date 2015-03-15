@@ -9,7 +9,7 @@ module.exports = function(options) {
   var postcssCachedInstance = postcssCached();
 
   var gulpPlugin = through.obj(function(file, encoding, callback) {
-    var fileOptions = Object(options);
+    var fileOptions = Object.create(options);
     fileOptions.from = file.path;
     fileOptions.map = fileOptions.map || file.sourceMap;
 
