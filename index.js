@@ -20,8 +20,7 @@ module.exports = function(options) {
       if (fileOptions.map) {
         applySourceMap(file, result.map);
       }
-      this.push(file);
-      callback();
+      callback(null, file);
     } catch(e) {
       callback(new gulpUtil.PluginError('gulp-postcss-cached', e));
     }
